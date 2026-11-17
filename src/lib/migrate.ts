@@ -181,7 +181,7 @@ export function migrateLegacy(legacyRaw: unknown): Record<string, unknown> {
       lastFired: {},
     },
     theme: {
-      accent: ACCENTS.some((a) => a.id === raw.th) ? raw.th : 'sunset',
+      accent: raw.th === 'sunset' ? 'cadmium' : ACCENTS.some((a) => a.id === raw.th) ? raw.th : 'cadmium',
       mode: THEME_MODES.some((m) => m.id === raw.md) ? raw.md : 'dark',
     },
     onboardingDone: bool(raw.ok),
@@ -402,7 +402,9 @@ export function normalizeData(input: unknown): AppData {
 
   const rawTheme = (raw.theme ?? {}) as Record<string, any>;
   const theme: ThemeSettings = {
-    accent: ACCENTS.some((a) => a.id === rawTheme.accent) ? rawTheme.accent : base.theme.accent,
+    accent: rawTheme.accent === 'sunset'
+      ? 'cadmium'
+      : ACCENTS.some((a) => a.id === rawTheme.accent) ? rawTheme.accent : base.theme.accent,
     mode: THEME_MODES.some((m) => m.id === rawTheme.mode) ? rawTheme.mode : base.theme.mode,
   };
 

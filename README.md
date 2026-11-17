@@ -9,7 +9,7 @@
 <p>
   <a href="https://mesai-defteri-ios-test.pages.dev/">iPhone’da web uygulamasını aç</a>
   ·
-  <a href="https://github.com/ahmetdemir1283-ops/Maas-Defteri/releases/download/v4.0.0/MesaiDefteri-Android-debug.apk">Android deneme APK’sını indir</a>
+  <a href="https://github.com/ahmetdemir1283-ops/Maas-Defteri/releases/download/v4.0.1/MesaiDefteri-Android-debug.apk">Android deneme APK’sını indir</a>
 </p>
 
 </div>
@@ -34,11 +34,13 @@ Mesai Defteri; çalışma düzenini ve ücret bilgilerini kaydederek mesai, izin
 - **Yedekleme:** Verilerini JSON dosyası olarak dışa aktar ve daha sonra geri yükle.
 - **Görünüm:** Açık, koyu veya sistem temasını ve vurgu rengini seç.
 
+Varsayılan marka rengi Kadmiyum Yeşili’dir; Mesai Saati logosu ve ilk tema seçeneği aynı renktedir.
+
 ## İndirme ve kullanım
 
 | Platform | Kullanım | Durum |
 | --- | --- | --- |
-| Android | [Deneme APK’sını indir](https://github.com/ahmetdemir1283-ops/Maas-Defteri/releases/download/v4.0.0/MesaiDefteri-Android-debug.apk), telefonda aç ve kurulumu tamamla. Android, ilk kurulumda bu kaynağa ait uygulama yükleme izni isteyebilir. | Debug imzalı test sürümü |
+| Android | [Deneme APK’sını indir](https://github.com/ahmetdemir1283-ops/Maas-Defteri/releases/download/v4.0.1/MesaiDefteri-Android-debug.apk), telefonda aç ve kurulumu tamamla. Android, ilk kurulumda bu kaynağa ait uygulama yükleme izni isteyebilir. | Debug imzalı test sürümü |
 | iPhone | [Safari’de aç](https://mesai-defteri-ios-test.pages.dev/), **Paylaş → Ana Ekrana Ekle** adımlarını izle. | Geçici web uygulaması (PWA) |
 | iOS yerel uygulaması | Bu depoda Xcode projesi bulunur; cihaza IPA yüklemek için Mac, Xcode ve Apple imzalama gerekir. | IPA henüz üretilmedi |
 

@@ -1,5 +1,5 @@
 :root {
-  --a: #e0613f;
+  --a: #006B3C;
   --a-soft: color-mix(in srgb, var(--a) 13%, transparent);
   --bg: #f4f1ea;
   --card: #fbfaf7;
@@ -35,7 +35,7 @@ html[data-mode="dark"] {
 
 html[data-accent="ocean"] { --a: #4f7be8; }
 html[data-accent="forest"] { --a: #3f9a72; }
-html[data-accent="sunset"] { --a: #e0613f; }
+html[data-accent="cadmium"] { --a: #006B3C; }
 html[data-accent="violet"] { --a: #8061e0; }
 
 *,

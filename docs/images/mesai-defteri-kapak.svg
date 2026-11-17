@@ -4,11 +4,11 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111114"/><stop offset="1" stop-color="#201b1a"/></linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f28462"/><stop offset="1" stop-color="#d84f32"/></linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0613f" stop-opacity=".28"/><stop offset="1" stop-color="#e0613f" stop-opacity="0"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#006B3C" stop-opacity=".28"/><stop offset="1" stop-color="#006B3C" stop-opacity="0"/></linearGradient>
   </defs>
   <rect width="1440" height="560" rx="34" fill="url(#bg)"/>
   <circle cx="1040" cy="240" r="360" fill="url(#glow)"/>
-  <path d="M0 450C220 390 300 550 540 480s350-120 550-40 220 60 350-20v140H0z" fill="#e0613f" opacity=".06"/>
+  <path d="M0 450C220 390 300 550 540 480s350-120 550-40 220 60 350-20v140H0z" fill="#006B3C" opacity=".06"/>
   <g transform="translate(92 92)">
     <rect width="64" height="64" rx="19" fill="url(#accent)"/>
     <path d="M19 39h26M22 31h20M26 23h12" fill="none" stroke="#fff8f2" stroke-width="4" stroke-linecap="round"/>

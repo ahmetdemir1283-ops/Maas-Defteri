@@ -1,4 +1,4 @@
-export type Accent = 'sunset' | 'ocean' | 'forest' | 'violet';
+export type Accent = 'cadmium' | 'ocean' | 'forest' | 'violet';
 export type ThemeMode = 'light' | 'dark' | 'auto';
 export type SalaryMode = 'monthly' | 'hourly';
 export type SalaryBasis = 'net' | 'gross';

@@ -7,7 +7,7 @@ import type {
   ThemeMode,
 } from './types.ts';
 
-export const APP_VERSION = '4.0.0';
+export const APP_VERSION = '4.0.1';
 export const STORAGE_KEY = 'mesai-defteri:v4';
 export const LEGACY_KEY = 'mm2';
 
@@ -50,7 +50,7 @@ export const DAY_STATUS_META: Record<string, { label: string; color: string }> =
 };
 
 export const ACCENTS: { id: Accent; label: string; color: string }[] = [
-  { id: 'sunset', label: 'Hanko', color: '#e0613f' },
+  { id: 'cadmium', label: 'Kadmiyum Yeşili', color: '#006B3C' },
   { id: 'ocean', label: 'Gökyüzü', color: '#4f7be8' },
   { id: 'forest', label: 'Orman', color: '#3f9a72' },
   { id: 'violet', label: 'Mor', color: '#8061e0' },
@@ -140,7 +140,7 @@ export function createDefaultData(): AppData {
       leave: { enabled: false, time: '09:00' },
       lastFired: {},
     },
-    theme: { accent: 'sunset', mode: 'dark' },
+    theme: { accent: 'cadmium', mode: 'dark' },
     onboardingDone: false,
     legal: {
       ...DEFAULT_LEGAL,
