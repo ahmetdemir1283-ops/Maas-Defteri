@@ -16,7 +16,7 @@ const hasManifest = Boolean(document.querySelector('link[rel="manifest"]'));
 if (import.meta.env.PROD && hasManifest && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register(`${import.meta.env.BASE_URL}sw.js`)
+      .register(`${import.meta.env.BASE_URL}sw.js`, { updateViaCache: 'none' })
       .catch(() => undefined);
   });
 }

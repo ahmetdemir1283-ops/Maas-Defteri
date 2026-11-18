@@ -9,6 +9,7 @@ const APP_URLS = [
   './icon-512.png',
   './apple-touch-icon.png',
 ];
+const BUILT_ASSETS = '__MESAI_PRECACHE_ASSETS__';
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
@@ -21,8 +22,11 @@ self.addEventListener('install', (event) => {
     // Vite gives each production JS/CSS file a content hash. Read those exact
     // filenames from the generated HTML and cache them during installation.
     const html = await response.text();
-    const assetUrls = [...html.matchAll(/(?:src|href)=["']([^"']+\.(?:js|css))(?:\?[^"']*)?["']/gi)]
-      .map((match) => new URL(match[1], APP_BASE));
+    const assetUrls = [
+      ...[...html.matchAll(/(?:src|href)=["']([^"']+\.(?:js|css))(?:\?[^"']*)?["']/gi)]
+        .map((match) => new URL(match[1], APP_BASE)),
+      ...JSON.parse(BUILT_ASSETS).map((path) => new URL(path, APP_BASE)),
+    ];
     const shellAssets = [...new Map(assetUrls.map((url) => [url.href, url])).values()];
     await Promise.all(shellAssets.map(async (url) => {
       const asset = await fetch(url, { cache: 'reload' });
