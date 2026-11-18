@@ -9,7 +9,7 @@
 <p>
   <a href="https://mesai-defteri-ios-test.pages.dev/">iPhone’da web uygulamasını aç</a>
   ·
-  <a href="https://github.com/ahmetdemir1283-ops/Maas-Defteri/releases/download/v4.0.1/MesaiDefteri-Android-debug.apk">Android deneme APK’sını indir</a>
+  <a href="https://github.com/ahmetdemir1283-ops/Maas-Defteri/releases/download/v4.0.2/MesaiDefteri-Android-debug.apk">Android deneme APK’sını indir</a>
 </p>
 
 </div>
@@ -40,7 +40,7 @@ Varsayılan marka rengi Kadmiyum Yeşili’dir; Mesai Saati logosu ve ilk tema s
 
 | Platform | Kullanım | Durum |
 | --- | --- | --- |
-| Android | [Deneme APK’sını indir](https://github.com/ahmetdemir1283-ops/Maas-Defteri/releases/download/v4.0.1/MesaiDefteri-Android-debug.apk), telefonda aç ve kurulumu tamamla. Android, ilk kurulumda bu kaynağa ait uygulama yükleme izni isteyebilir. | Debug imzalı test sürümü |
+| Android | [Deneme APK’sını indir](https://github.com/ahmetdemir1283-ops/Maas-Defteri/releases/download/v4.0.2/MesaiDefteri-Android-debug.apk), telefonda aç ve kurulumu tamamla. Android, ilk kurulumda bu kaynağa ait uygulama yükleme izni isteyebilir. | Debug imzalı test sürümü |
 | iPhone | [Safari’de aç](https://mesai-defteri-ios-test.pages.dev/), **Paylaş → Ana Ekrana Ekle** adımlarını izle. | Geçici web uygulaması (PWA) |
 | iOS yerel uygulaması | Bu depoda Xcode projesi bulunur; cihaza IPA yüklemek için Mac, Xcode ve Apple imzalama gerekir. | IPA henüz üretilmedi |
 
@@ -49,6 +49,8 @@ Android APK, telefona doğrudan kurulabilen deneme paketidir; Google Play sürü
 ## Veriler ve bildirimler
 
 Uygulama profil, maaş, mesai, izin ve ayar verilerini cihazın yerel depolamasında tutar. Hesap açma veya cihazlar arası eşitleme özelliği yoktur. Tarayıcı verilerini temizlemek uygulama kayıtlarını silebilir; bu nedenle **Ayarlar → Yedek** bölümünden düzenli yedek almak iyi olur.
+
+Web uygulamasını ilk kez ve yeni sürüm güncellemelerini alırken çevrim içi açın. Uygulama başlangıç dosyaları cihazda önbelleğe alındıktan sonra bağlantı olmadığında da açılabilir; kayıtlar ve hesaplamalar cihazda kalır, hesap veya veri eşitleme sunucusu kullanılmaz.
 
 Android sürümü, işletim sisteminin yerel bildirimlerini kullanır. iPhone’daki web sürümünde uygulama içi hatırlatmalar uygulama çalışırken kontrol edilir; uygulama kapalıyken her gün çalışacağı garanti edilmez. Yerel iOS uygulaması için Xcode projesi gerekir.
 

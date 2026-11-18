@@ -7,7 +7,7 @@ import type {
   ThemeMode,
 } from './types.ts';
 
-export const APP_VERSION = '4.0.1';
+export const APP_VERSION = '4.0.2';
 export const STORAGE_KEY = 'mesai-defteri:v4';
 export const LEGACY_KEY = 'mm2';
 
